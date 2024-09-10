@@ -3,13 +3,14 @@
 ![InstaFlux](instaflux.jpg)
 
 
-InstaFlux is a straightforward image generation tool that leverages the fast and affordable Runware API, built using Gradio. This application enables users to generate images from text prompts with various configuration options, requiring minimal coding knowledge or GPU environment setup with install scripts for windows and linux.
+InstaFlux is a fast straightforward image generation tool that leverages the fast and affordable Runware API, built using Gradio. This application enables users to generate images from text prompts with various configuration options, requiring minimal coding knowledge or GPU environment setup with install scripts for windows and linux.
 
 ## Features
 
 - Input text prompts to generate images.
 - Configure the model, number of results, and image dimensions.
 - Option to provide negative prompts and use caching.
+- Fast flux 3 to 6 sec generation depending on model.
 - Must setup runware.ai account for API key. (free $15 will make 1000 512x512 images for about $1)
 
 ## Quick Installation
