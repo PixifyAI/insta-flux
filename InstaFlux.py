@@ -2,7 +2,7 @@ import gradio as gr
 import asyncio
 from runware import Runware, IImageInference
 
-RUNWARE_API_KEY = "RUNWARE_API_KEY"
+RUNWARE_API_KEY = "RUNWARE_API_KEY" # <---ADD YOUR API KEY HERE BETWEEN THE " "
 
 # Async function to generate image based on input parameters
 async def generate_image(prompt, model, numberResults, negativePrompt, useCache, height, width):
