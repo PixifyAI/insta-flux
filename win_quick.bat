@@ -5,16 +5,18 @@ SETLOCAL ENABLEDELAYEDEXPANSION
 where git >nul 2>nul
 if %ERRORLEVEL% NEQ 0 (
     echo Git is not installed. Installing Git...
-    :: You might need to provide the path to the Git installer here
-    start /wait https://git-scm.com/download/win
+    powershell -Command "Invoke-WebRequest -Uri 'https://git-scm.com/download/win' -OutFile 'git-installer.exe'"
+    start /wait git-installer.exe
+    del git-installer.exe
 )
 
 :: Check if Python is installed
 where python >nul 2>nul
 if %ERRORLEVEL% NEQ 0 (
     echo Python is not installed. Installing Python...
-    :: You might need to provide the path to the Python installer here
-    start /wait https://www.python.org/ftp/python/3.10.4/python-3.10.4-amd64.exe
+    powershell -Command "Invoke-WebRequest -Uri 'https://www.python.org/ftp/python/3.10.4/python-3.10.4-amd64.exe' -OutFile 'python-installer.exe'"
+    start /wait python-installer.exe
+    del python-installer.exe
 )
 
 :: Check if pip is installed
@@ -25,6 +27,7 @@ if %ERRORLEVEL% NEQ 0 (
 )
 
 :: Clone the repository
+echo Cloning repository...
 git clone https://github.com/PixifyAI/insta-flux
 if %ERRORLEVEL% NEQ 0 (
     echo Error: Failed to clone the repository.
@@ -42,7 +45,7 @@ if %ERRORLEVEL% NEQ 0 (
 )
 
 :: Activate the virtual environment
-venv\Scripts\activate
+call venv\Scripts\activate
 if %ERRORLEVEL% NEQ 0 (
     echo Error: Failed to activate the virtual environment.
     exit /b %ERRORLEVEL%
@@ -54,6 +57,7 @@ if %ERRORLEVEL% NEQ 0 (
     echo Error: Failed to install required packages.
     exit /b %ERRORLEVEL%
 )
+pause
 
 :: Pause to remind the user to add their Runware API key
 echo Please add your Runware API key to the InstaFlux.py file then press Enter.
@@ -65,6 +69,4 @@ if %ERRORLEVEL% NEQ 0 (
     echo Error: Failed to run the application.
     exit /b %ERRORLEVEL%
 )
-
-:: Pause to keep the window open
 pause
