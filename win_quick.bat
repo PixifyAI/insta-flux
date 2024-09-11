@@ -28,7 +28,7 @@ if %ERRORLEVEL% NEQ 0 (
 
 :: Clone the repository
 echo Cloning repository...
-git clone https://github.com/PixifyAI/insta-flux
+git clone https://github.com/PixifyAI/instaflux-webui
 if %ERRORLEVEL% NEQ 0 (
     echo Error: Failed to clone the repository.
     exit /b %ERRORLEVEL%
