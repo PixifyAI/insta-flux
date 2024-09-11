@@ -17,8 +17,8 @@ InstaFlux is a fast straightforward image generation tool that leverages the fas
 
 To use the installation scripts:
 
-- On Windows, save the `install.bat` file and double-click it to run.
-- On Linux, save the `install.sh` file, give it execute permissions with `chmod +x install.sh`, and then run it with `./install.sh`.
+- On Windows, save the `win_quick.bat` file and double-click it to run.
+- On Linux, save the `linux_quick.sh` file, give it execute permissions with `chmod +x install.sh`, and then run it with `./linux_quick.sh`.
 
 (Note: The scripts pause before attempting to start the web UI, which won’t work until you add the API key to the `InstaFlux.py` file. After that, visit [http://127.0.0.1:7860](http://127.0.0.1:7860) in your browser.)
 
@@ -29,7 +29,7 @@ Ensure you have Git, Python, and pip installed. (The above scripts should check 
 1. Clone this repository:
 
     ```bash
-    git clone https://github.com/PixifyAI/instaflux-webui
+    git clone https://github.com/PixifyAI/insta-flux
     ```
 
 2. Navigate to the project directory:
