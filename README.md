@@ -1,4 +1,4 @@
-# InstaFlux
+# InstaFlux Gradio WebUI Runware Image Generator
 
 ![InstaFlux](instaflux.jpg)
 
@@ -20,7 +20,7 @@ To use the installation scripts:
 - On Windows, save the `win_quick.bat` file and double-click it to run.
 - On Linux, save the `linux_quick.sh` file, give it execute permissions with `chmod +x install.sh`, and then run it with `./linux_quick.sh`.
 
-(Note: The scripts pause before attempting to start the web UI, which won’t work until you add the API key to the `InstaFlux.py` file. After that, visit [http://127.0.0.1:7860](http://127.0.0.1:7860) in your browser.)
+(Note: The scripts pause before attempting to start the web UI, which won’t work until you add the API key to the `InstaFlux.py` file. After that, visit http://127.0.0.1:7860 in your browser.)
 
 ## Installation
 
@@ -29,13 +29,13 @@ Ensure you have Git, Python, and pip installed. (The above scripts should check 
 1. Clone this repository:
 
     ```bash
-    git clone https://github.com/PixifyAI/insta-flux
+    git clone https://github.com/PixifyAI/instaflux-webui
     ```
 
 2. Navigate to the project directory:
 
     ```bash
-    cd insta-flux
+    cd instaflux-webui
     ```
 
 3. Create a virtual environment (optional but recommended):
@@ -63,7 +63,7 @@ Run the application using:
 python InstaFlux.py
 ```
 
-The application will start a local server. Open your browser and navigate to [http://127.0.0.1:7860](http://127.0.0.1:7860) to access the Gradio interface.
+The application will start a local server. Open your browser and navigate to (http://127.0.0.1:7860) to access the Gradio interface.
 
 ## Troubleshooting
 
