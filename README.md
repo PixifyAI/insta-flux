@@ -29,7 +29,7 @@ Ensure you have Git, Python, and pip installed. (The above scripts should check 
 1. Clone this repository:
 
     ```bash
-    git clone https://github.com/PixifyAI/insta-flux
+    git clone https://github.com/PixifyAI/instaflux-webui
     ```
 
 2. Navigate to the project directory:
