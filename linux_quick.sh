@@ -37,7 +37,7 @@ if ! command -v pip3 &> /dev/null; then
 fi
 
 # Clone the repository
-git clone https://github.com/PixifyAI/insta-flux
+git clone https://github.com/PixifyAI/instaflux-webui
 if [ $? -ne 0 ]; then
     echo "Error: Failed to clone the repository."
     exit 1
